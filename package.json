@@ -1,0 +1,14 @@
+{
+  "name": "testing-testing-123",
+  "version": "1.0.0",
+  "description": "repo for testing cpd",
+  "main": "index.js",
+  "author": "anat dean <anat.dean@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "jest": "^29.3.1"
+  }
+}
