@@ -1,0 +1,1 @@
+const makePayment = require("../payment");
