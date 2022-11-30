@@ -88,6 +88,9 @@ jest.mock("../src/my-great-func", () => ({
 
 ## Tasks
 
+> Before you start make sure to `npm install`
+> To run tests use `npm test` or to run a specific test run `npx jest filename`
+
 1. Work on the operations functions / tests. The solutions have already been written so you can focus on testing.
 
    - Keep in mind AAA.
