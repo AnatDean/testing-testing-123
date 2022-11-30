@@ -43,14 +43,19 @@ Jest mocks can be set up to have default return values, resovled values (if asyn
 jest.fn(() => {
   /*default functionlality and return of this mock */
 });
+
 jest
   .fn()
-  .mockImplementation(/*default functionlality and return of this mock */); // same as above
+  .mockImplementation(/*default functionlality and return of this mock */);
+
+// the above 2 are the same
 
 jest.fn().mockReturnValue(/* default return value for all tests*/);
+
 jest.fn().mockReturnValueOnce(/* default return value for JUST THIS test*/);
 
 jest.fn().mockResolvedValue(/* default resolved value for all tests*/);
+
 jest.fn().mockResolvedValueOnce(/* default resolved value for JUST THIS test*/);
 ```
 
@@ -61,12 +66,14 @@ But more likely you would want to mock any further calls made by your own functi
 
 ```js
 jest.mock("../src/my-great-func"); // the default export of this file is set to jest.fn
+
 jest.mock("../src/my-great-func", () => ({
   helper: jest.fn(),
   fetcher: jest.fn(() => {
     status: 200;
   }),
-})); // the named export helper is now set to jest.fn(), and fetcher to a specific mock implementation
+}));
+// the named export helper is now set to jest.fn(), and fetcher to a specific mock implementation
 ```
 
 #### Extra...
@@ -81,16 +88,20 @@ jest.mock("../src/my-great-func", () => ({
 
 ## Tasks
 
-1. Work on the operations functions / tests. The solutions have already been written so you can focus on the difference in mocking named versus default exports.
+1. Work on the operations functions / tests. The solutions have already been written so you can focus on testing.
 
    - Keep in mind AAA.
+   - Consider whether or not you need to mock anything here.
 
 2. Work on the calculator function. The solution to this hasn't been written.
 
+   - Keep in mind AAA.
    - It should take 2 numbers, a and b as well as an operator function.
    - Consider how you would UNIT test this (i.e. it should be irrelevant which operator function is passed) and how you could do an Integration test.
+   - Consider when mocking whether you need to mock a module or a dependency injection, how would the mock differ?
 
 3. Work on the makepayment testing. The solution has already been sorted so you can focus on testing.
 
    - Again consider how you may UNIT vs Integration test this.
+   - Consider when mocking whether you need to mock a module or a dependency injection, how would the mock differ?
    - Extra: Note that the function has some mutating behaviour: consider how you could test both the output of the function and any other effects it has.
