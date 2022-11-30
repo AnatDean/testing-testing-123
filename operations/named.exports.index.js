@@ -1,15 +1,15 @@
-export const add = (a, b) => {
+exports.add = (a, b) => {
   return a + b;
 };
 
-export const subtract = (a, b) => {
+exports.subtract = (a, b) => {
   return a - b;
 };
 
-export const multiply = (a, b) => {
+exports.multiply = (a, b) => {
   return a * b;
 };
 
-export const divide = (a, b) => {
+exports.divide = (a, b) => {
   return a / b;
 };

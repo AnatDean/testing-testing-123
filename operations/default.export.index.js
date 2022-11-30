@@ -16,4 +16,4 @@ const divide = (a, b) => {
 
 const operations = { add, subtract, multiply, divide };
 
-export default operations;
+module.exports = operations;

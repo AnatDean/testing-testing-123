@@ -7,4 +7,4 @@ const makePayment = (price, fundsInPennies) => {
   return { success: 200 };
 };
 
-export default makePayment;
+module.exports = makePayment;

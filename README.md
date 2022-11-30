@@ -69,14 +69,28 @@ jest.mock("../src/my-great-func", () => ({
 })); // the named export helper is now set to jest.fn(), and fetcher to a specific mock implementation
 ```
 
+#### Extra...
+
+> `module.exports` === `export default`
+>
+> and
+>
+> `exports.name` === `export const name`
+
+---
+
 ## Tasks
 
-1. Work on the operations functions / tests. The solutions have already been written so you can focus on the difference in mocking named versus default exports. Keep in mind AAA.
+1. Work on the operations functions / tests. The solutions have already been written so you can focus on the difference in mocking named versus default exports.
+
+   - Keep in mind AAA.
 
 2. Work on the calculator function. The solution to this hasn't been written.
-   It should take 2 numbers, a and b as well as an operator function.
-   Consider how you would UNIT test this (i.e. it should be irrelevant which operator function is passed) and how you could do an Integration test.
 
-3. Work on the makepayment testing. The solution has already been sorted so you can focus on testing
-   Again consider how you may UNIT vs Integration test this.
-   Extra: Note that the function has some mutating behaviour: consider how you could test both the output of the function and any other effects it has.
+   - It should take 2 numbers, a and b as well as an operator function.
+   - Consider how you would UNIT test this (i.e. it should be irrelevant which operator function is passed) and how you could do an Integration test.
+
+3. Work on the makepayment testing. The solution has already been sorted so you can focus on testing.
+
+   - Again consider how you may UNIT vs Integration test this.
+   - Extra: Note that the function has some mutating behaviour: consider how you could test both the output of the function and any other effects it has.
