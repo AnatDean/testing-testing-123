@@ -69,7 +69,7 @@ jest.mock("../src/my-great-func", () => ({
 })); // the named export helper is now set to jest.fn(), and fetcher to a specific mock implementation
 ```
 
-## Tasks
+## Tasks
 
 1. Work on the operations functions / tests. The solutions have already been written so you can focus on the difference in mocking named versus default exports. Keep in mind AAA.
 
